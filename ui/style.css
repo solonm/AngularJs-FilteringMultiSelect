@@ -1,0 +1,40 @@
+.btn-circle {
+	width: 17px;
+	height: 16px;
+	text-align: center;
+	padding: 1px 0;
+	font-size: 0.7em; /*font-size: 8px;*/
+	line-height: 20px; /*line-height: 1.2;*/
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+.well .list-group .list-group-item{
+	float: left;
+	padding: 5px 7px;
+}
+.row{
+	margin-top:0;
+	margin-left: 1px;
+	margin-bottom:2px;
+}
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+.btn-default {
+	background-image: none !important;
+	border-color: #ccc;
+	text-shadow: 0 1px 0 #fff;
+	height: 25px;
+}
+.form-control {
+	height:25px;
+	font-size: 12px;
+}
+.dropdown-menu{
+	position: absolute;
+	width: auto !important;
+}
+.dropdown-menu li a{
+	cursor: pointer;
+}
+.dropdown-menu li {
+	width:100%;
+}
