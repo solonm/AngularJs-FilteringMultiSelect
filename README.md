@@ -6,4 +6,4 @@ You can remove the selection at any time by clicking the (x) button on the right
 
 This control uses AngularJs & Bootstrap UI.
 
-See it here http://embed.plnkr.co/U8rB5t/preview
+See the demo here: http://embed.plnkr.co/U8rB5t/preview
