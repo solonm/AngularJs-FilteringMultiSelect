@@ -21,7 +21,6 @@ angular.module('FilteringSelect',['ui.bootstrap.collapse']).controller('fsContro
 		setTimeout(function(){
 			document.body.click();
 		}, 500);
-		//$event.stopImmediatePropagation();
 		$scope.isCollapsed = false;
 		
 	};
@@ -49,15 +48,14 @@ angular.module('FilteringSelect',['ui.bootstrap.collapse']).controller('fsContro
 			
 	this.focus = function($event){
 		$event.currentTarget.focus();
-		console.log($scope.act); 
 	};
 		
-		var addNewStyle = function (newStyle) {
-		var styleElement = document.getElementById('styles_js');
+	var addNewStyle = function (newStyle) {
+		var styleElement = document.getElementById('js_styles');
 		if (!styleElement) {
 			styleElement = document.createElement('style');
 			styleElement.type = 'text/css';
-			styleElement.id = 'styles_js';
+			styleElement.id = 'js_styles';
 			document.getElementsByTagName('head')[0].appendChild(styleElement);
 		}
 		styleElement.appendChild(document.createTextNode(newStyle));
