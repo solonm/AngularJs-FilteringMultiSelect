@@ -19,7 +19,7 @@
 	<body ng-app='FilteringSelect' ng-controller='fsController as ctrl'>
 		<div class="col-sm-5">
 			<div class="bootstrap-select input-group">
-				<input type="text" autocomplete="off" name="my_select_label" class="form-control" ng-model="filterText" ng-keyup="act=true" ng-blur="act=false">
+				<input type="text" autocomplete="off" name="my_select_label" class="form-control" ng-model="filterText" ng-keyup="act=true">
 				<input type="hidden" name="my_select" value="">
 				<div class="input-group-btn" ng-class="{open: act}">
 					<button tabindex="-1" type="button" class="btn btn-default dropdown-toggle" ng-class="{active: act}" ng-click="act = !act">
@@ -35,7 +35,7 @@
 					<ul class="list-group">
 					<li class="list-group-item" ng-repeat="selectedItem in selectedItems">
 						{{selectedItem.name}}
-						<button type="button" class="btn btn-danger btn-circle" style="margin-left:5px;" ng-click="ctrl.removeItem()">
+						<button type="button" class="btn btn-danger btn-circle" style="margin-left:5px;" ng-click="ctrl.removeItem(this)">
 							<i class="glyphicon glyphicon-remove"></i>
 						</button>
 					</li>
