@@ -4,6 +4,11 @@ angular.module('FilteringSelect',['ui.bootstrap.collapse']).controller('fsContro
 	$scope.act = false;
 	$scope.isCollapsed = true;
 		
+	var windowControl = angular.element($window);
+	windowControl.bind('resize', function () {
+		addNewStyle('.input-group-btn .dropdown-menu {width: '+document.body.querySelector(".bootstrap-select.input-group").clientWidth + "px !important"+'}');
+	});
+  
 	$http.get("data/data.js")
 	.success(function(data) {
 		$scope.listItems = data;
